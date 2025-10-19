@@ -61,7 +61,7 @@ services:
         condition: service_healthy
 
   otel-collector:
-    image: signoz/signoz-otel-collector:0.129.7
+    image: otel/opentelemetry-collector-contrib:0.102.0
     restart: unless-stopped
     command: ["--config=/etc/otel-collector-config.yaml"]
     environment:
